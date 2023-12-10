@@ -1,6 +1,7 @@
 #![allow(non_snake_case)]
 
 mod day01;
+mod day02;
 
 use structopt::StructOpt;
 
@@ -28,6 +29,7 @@ fn main() {
 
     match opt.day {
         1 => println!("{}", day01::solve(task_input)),
+        2 => day02::solve(task_input),
         _ => std::process::exit(1)
     }
 }
